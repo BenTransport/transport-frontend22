@@ -5,20 +5,20 @@ import * as React from "react";
 
 const faqData: any[] = [
     {
-        question: "How can I book a vehicle or helper?",
-        answer: "To book a vehicle or helper, click on the 'Få erbjudande' or 'Boka nu' button on our website. Fill out the form with your requirements, and we'll provide you with the best options to suit your needs.",
+        question: "Hur kan jag boka ett fordon eller en hjälpare?",
+        answer: "För att boka ett fordon eller en hjälpare, klicka på knappen 'Få erbjudande' eller 'Boka nu' på vår webbplats. Fyll i formuläret med dina krav så ger vi dig de bästa alternativen som passar dina behov.",
     },
     {
-        question: "How does the booking process work?",
-        answer: "To book a vehicle or helper, click on the 'Få erbjudande' or 'Boka nu' button on our website. Fill out the form with your requirements, and we'll provide you with the best options to suit your needs.",
+        question: "Hur fungerar bokningsprocessen?",
+        answer: "För att boka ett fordon eller en hjälpare, klicka på knappen 'Få erbjudande' eller 'Boka nu' på vår webbplats. Fyll i formuläret med dina krav så ger vi dig de bästa alternativen som passar dina behov.",
     },
     {
-        question: "What services do you offer?",
-        answer: "We offer moving and shipping services, including vehicles and helpers for shifting homes, office relocations, and logistics support.",
+        question: "Vilka tjänster erbjuder ni?",
+        answer: "Vi erbjuder flytt- och transporttjänster, inklusive fordon och hjälpare för bostadsflytt, kontorsflytt och logistiksupport.",
     },
     {
-        question: "What makes your services unique?",
-        answer: "Our services stand out due to our reliability, affordability, and a wide range of vehicles and helpers to meet your specific needs.",
+        question: "Vad gör era tjänster unika?",
+        answer: "Våra tjänster utmärker sig genom vår pålitlighet, prisvärdhet och ett brett utbud av fordon och hjälpare för att möta dina specifika behov.",
     }
 ];
 
@@ -35,11 +35,11 @@ export const FAQTWO: React.FC = () => {
                 <div className="flex flex-col flex-1 shrink w-full basis-0 min-w-[240px] max-md:max-w-full">
                     <div data-aos="fade-right" className="flex flex-wrap gap-6 items-center w-full text-2xl font-bold leading-none text-emerald-500 whitespace-nowrap tracking-[5.52px] max-md:max-w-full">
                         <div className="shrink-0 self-stretch my-auto h-0.5 border-2 border-emerald-500 border-solid w-[86px]" />
-                        <div className="self-stretch my-auto">FAQ'S</div>
+                        <div className="self-stretch my-auto">FAQ</div>
                     </div>
                     <div data-aos="fade-up-right" className="mt-4 text-4xl font-semibold leading-tight text-sky-800 max-md:max-w-full">
-                        <span className="font-bold">Looking </span>
-                        <span className="font-bold text-sky-800">for answers </span>
+                        <span className="font-bold">Letar </span>
+                        <span className="font-bold text-sky-800">du efter svar </span>
                         <span className="font-bold">?</span>
                     </div>
                 </div>
@@ -58,13 +58,11 @@ export const FAQTWO: React.FC = () => {
                                 <ChevronUp />
                                 :
                                 <ChevronDown />
-
-
                             }
                         </div>
                         {expandedIndex === index && (
                             <div className="mt-2.5 text-lg leading-8 text-stone-900 text-opacity-80 max-md:max-w-full">
-                                {faq.answer || "Answer coming soon! Please check back later."}
+                                {faq.answer || "Svar kommer snart! Vänligen kolla tillbaka senare."}
                             </div>
                         )}
                     </div>
