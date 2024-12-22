@@ -1,0 +1,18 @@
+services:
+  - name: transport-frontend
+    type: web
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    plan: free
+    envVars:
+      - key: NEXT_PUBLIC_BACKEND_URL
+        value: http://localhost:3344 # Replace with production URL for deployment
+      - key: NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+        value: pk_test_51QSlqUBQQlC38lZKnPMgeQxzLkuq6TdhvdXS4MlCQ3dvuqUGzD98yGxjoVv2h7tiHPCssz4ORmbYu3wfeHDfQvIP00efUDnl3Q
+      - key: NEXT_PUBLIC_CLOUDNAIRY_CLOUD_NAME
+        value: di6r722sv
+      - key: NEXTAUTH_SECRET
+        value: vasdvasdvas
+      - key: NEXTAUTH_URL
+        value: http://localhost:3000 # Replace with production URL for deployment
