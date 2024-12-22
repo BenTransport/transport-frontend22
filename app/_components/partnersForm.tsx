@@ -128,10 +128,10 @@ const PartnerForm = () => {
 
                 <div className="w-full mb-4 flex flex-col items-start">
                     <label className="text-black font-semibold mb-2">
-                        Ange fordonsnummer
+                    Organisationsnummer
                     </label>
                     <Input
-                        label=" Registreringsnummer "
+                        label=" Skriv ditt organisationsnummer. "
                         fullWidth
                         value={formData.vehicleNumber}
                         onChange={(e) => handleChange("vehicleNumber", e.target.value)}
@@ -141,10 +141,10 @@ const PartnerForm = () => {
                 {/* License Number */}
                 <div className="w-full mb-4 flex flex-col items-start">
                     <label className="text-black font-semibold mb-2">
-                        Ange körkortnummer
+                    Plats
                     </label>
                     <Input
-                        label=" Licensnummer "
+                        label=" Skriv plats  "
                         fullWidth
                         value={formData.licenseNumber}
                         onChange={(e) => handleChange("licenseNumber", e.target.value)}

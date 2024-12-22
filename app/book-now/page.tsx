@@ -334,7 +334,7 @@ const BookingPage: React.FC = () => {
                     <div className="w-full mb-4 flex flex-col items-start">
 
                         <Textarea
-                            label="Special Requirements (*Optional)"
+                            label="Lämna meddelande eller särskilda krav (Valfritt* )"
                             fullWidth
                             value={userInfo.message}
                             onChange={(e) => setUserInfo({ ...userInfo, message: e.target.value })}
@@ -471,13 +471,13 @@ const BookingPage: React.FC = () => {
                             <Modal isOpen={isPopupOpen} onClose={handleCancel}>
                                 <ModalContent>
                                     <ModalHeader>
-                                        <h4 className="text-lg text-sky-900 font-bold">Confirm Discount</h4>
+                                        <h4 className="text-lg text-sky-900 font-bold">Skriv ditt personnummer (valfritt*)</h4>
                                     </ModalHeader>
                                     <ModalBody>
                                         <Input
                                             type="tel"
-                                            label="Phone Number"
-                                            placeholder="Enter your phone number"
+                                            label=" "
+                                            placeholder="Skriv här ditt personnummerr "
                                             fullWidth
                                             value={phoneNumber}
                                             onChange={(e) => setPhoneNumber(e.target.value)}
@@ -485,7 +485,7 @@ const BookingPage: React.FC = () => {
                                     </ModalBody>
                                     <ModalFooter>
                                         <Button color="danger" onClick={handleCancel}>
-                                            Cancel
+                                        Avbryt
                                         </Button>
                                         <Button
                                             color="success"
@@ -493,7 +493,7 @@ const BookingPage: React.FC = () => {
                                             className='text-white'
                                             onClick={handleAccept}
                                         >
-                                            Accept
+                                            Godkänn
                                         </Button>
                                     </ModalFooter>
                                 </ModalContent>

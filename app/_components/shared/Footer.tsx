@@ -72,7 +72,7 @@ function Footer() {
                             title="Our email"
                             className="transition-colors duration-300 text-[#4B4B4B] hover:text-gray-700"
                         >
-                            info@moving.com
+                            info@forareakuten.com
                         </a>
                     </div>
                 </div>
@@ -90,11 +90,11 @@ function Footer() {
 
             <div className="flex items-center gap-3 sm:gap-0 justify-center flex-col-reverse bg-[#075985] sm:justify-between py-5 md:px-24 lg:px-8 px-4 border-t lg:flex-row">
                 <p className="text-sm text-white">
-                    © {new Date().getFullYear()} Moving and More. All rights reserved.
+                    © {new Date().getFullYear()} Forareakuten. All rights reserved .
                 </p>
                 <div className="flex space-x-4 md:space-x-6 text-white">
-                    <a href="#" className="hover:text-gray-400"><Facebook size={16} /></a>
-                    <a href="https://www.instagram.com/_forareakuten_?igsh=MXJqZHJ4MWhocTNleA==" className="hover:text-gray-400"><Instagram size={16} /></a>
+                    {/* <a href="#" className="hover:text-gray-400"><Facebook size={16} /></a>
+                    <a href="https://www.instagram.com/_forareakuten_?igsh=MXJqZHJ4MWhocTNleA==" className="hover:text-gray-400"><Instagram size={16} /></a> */}
 
                     {/* <a href="#" className="hover:text-gray-400"><Twitter size={16} /></a> */}
                     {/* <a href="#" className="hover:text-gray-400"><Youtube size={16} /></a> */}

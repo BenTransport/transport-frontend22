@@ -141,15 +141,17 @@ const GetOffer = () => {
 
   const servicesOptions = [
     { key: "Transport", value: "Transport" },
-    { key: "Cleaning", value: "Cleaning" },
-    { key: "Helper", value: "Helper" },
+    { key: "Cleaning", value: "Städning" },
+    { key: "Helper", value: "Hjälpare" },
   ];
+  
 
   const frequencyOptions = [
-    { key: "Monthly", value: "Monthly" },
-    { key: "Weekly", value: "Weekly" },
-    { key: "One-time", value: "One-time" },
+    { key: "Monthly", value: "Månadsvis" },
+    { key: "Weekly", value: "Veckovis" },
+    { key: "One-time", value: "Engångs" },
   ];
+  
 
   return (
     <div className="bg-white shadow-lg flex items-center justify-center rounded-3xl flex-col w-11/12 md:w-8/12 p-5 sm:p-10  2xl:w-7/12">
@@ -177,7 +179,7 @@ const GetOffer = () => {
         <div className="w-full mb-4 flex flex-col items-start">
           <label className="text-black font-semibold mb-2">Skriv in ditt namn</label>
           <Input
-            label="Name"
+            label="Namn"
             fullWidth
             value={formData.name}
             onChange={(e) => handleChange("name", e.target.value)}
@@ -193,7 +195,7 @@ const GetOffer = () => {
             Skriv in din e-postadress
           </label>
           <Input
-            label="Enter Email"
+            label="Ange e-postadress"
             fullWidth
             type="email"
             value={formData.email}
@@ -207,7 +209,7 @@ const GetOffer = () => {
             Skriv in ditt telefonnummer
           </label>
           <Input
-            label="Enter Phone"
+            label="Ange telefonnummer"
             fullWidth
             type="tel"
             value={formData.phone}
@@ -221,7 +223,7 @@ const GetOffer = () => {
           <label className="text-black font-semibold mb-2">Bästa tidsperiod</label>
           <Input
             type="date"
-            label="Date Range"
+            label="Datum"
             fullWidth
             min={today}
             value={formData.dateRange}
@@ -278,7 +280,7 @@ const GetOffer = () => {
             Arbetsfrekvens
           </label>
           <Select
-            label="Frequency"
+            label="Frekvens"
             fullWidth
             selectedKeys={formData.frequency ? [formData.frequency] : undefined}
             onSelectionChange={(key) =>
@@ -297,7 +299,7 @@ const GetOffer = () => {
           <div className="w-full mb-4 flex flex-col items-start">
             <label className="text-black font-semibold mb-2">Från</label>
             <Input
-              label="Pickup Location"
+              label="Upphämtningsplats"
               fullWidth
               value={formData.from}
               onChange={(e) => handleChange("from", e.target.value)}
@@ -306,7 +308,7 @@ const GetOffer = () => {
           <div className="w-full mb-4 flex flex-col items-start">
             <label className="text-black font-semibold mb-2">till</label>
             <Input
-              label="Drop Location"
+              label="Avlämningsplats"
               fullWidth
               value={formData.to}
               onChange={(e) => handleChange("to", e.target.value)}
@@ -315,7 +317,7 @@ const GetOffer = () => {
           <div className="w-full mb-4 flex flex-col items-start">
             <label className="text-black font-semibold mb-2">Avstånd</label>
             <Input
-              label="Distance in KMs"
+              label="Avstånd i km"
               fullWidth
               value={formData.distance}
               onChange={(e) => handleChange("distance", e.target.value)}
@@ -349,7 +351,7 @@ const GetOffer = () => {
               Antal städare
             </label>
             <Input
-              label="Cleaners"
+              label="Städare"
               type="number"
               fullWidth
               value={formData.workers}
@@ -362,7 +364,7 @@ const GetOffer = () => {
               Ytstorlek (kvm)
             </label>
             <Input
-              label="Space Size"
+              label="Yta"
               type="number"
               fullWidth
               value={formData.spaceSize}
@@ -380,7 +382,7 @@ const GetOffer = () => {
               Antal hjälpare
             </label>
             <Input
-              label="Helpers"
+              label="Hjälpare"
               type="number"
               fullWidth
               value={formData.helpers}
@@ -391,7 +393,7 @@ const GetOffer = () => {
           <div className="w-full mb-4 flex flex-col items-start">
             <label className="text-black font-semibold mb-2">Timmar</label>
             <Input
-              label="Helpers Hours require"
+              label="Hjälpares timmar krävs"
               fullWidth
               value={formData.hours}
               onChange={(e) => handleChange("hours", e.target.value)}
@@ -406,26 +408,26 @@ const GetOffer = () => {
 
         <>
           <div className="w-full mb-4 flex flex-col items-start">
-            <label className="text-black font-semibold mb-2"> do you have lift ?</label>
+            <label className="text-black font-semibold mb-2"> Har du hiss?</label>
             <Select
-              label="Lift"
+              label="Skriv Ja eller Nej"
               fullWidth
               selectedKeys={formData.lift}
               onSelectionChange={(key) =>
                 handleChange("lift", key.currentKey)
               }
             >
-              <SelectItem key={"true"}>Yes</SelectItem>
-              <SelectItem key={"false"}>No</SelectItem>
+              <SelectItem key={"true"}>Ja</SelectItem>
+              <SelectItem key={"false"}>Nej</SelectItem>
             </Select>
 
           </div>
           {
             formData.lift == "false" &&
             <div className="w-full mb-4 flex flex-col items-start">
-              <label className="text-black font-semibold mb-2">Floor Number</label>
+              <label className="text-black font-semibold mb-2">Vilket våningsplan ?</label>
               <Input
-                label="Your Floor"
+                label="Din våning"
                 type="number"
                 fullWidth
                 value={formData.floor}
@@ -444,7 +446,7 @@ const GetOffer = () => {
 
         </label>
         <Textarea
-          label="Special Requirements"
+          label="Lämna meddelande eller särskilda krav (Valfritt)"
           fullWidth
           value={formData.specialRequirements}
           onChange={(e) => handleChange("specialRequirements", e.target.value)}
