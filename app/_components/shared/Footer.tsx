@@ -21,8 +21,8 @@ function Footer() {
                         Vi är specialiserade på att erbjuda förstklassiga tjänster för städning, flytthjälp och transport. Oavsett om du planerar att flytta, behöver extra hjälp eller vill ha ditt utrymme städat till perfektion, är vi här för att få det att hända.
                         </p> */}
                         <div className="flex items-center my-2 space-x-3">
-                            <a href="#" className="hover:text-gray-900 text-gray-500"><Facebook size={20} /></a>
-                            <a href="#" className="hover:text-gray-900 text-gray-500"><Instagram size={20} /></a>
+                            <a href="https://m.facebook.com/100076726356313/" className="hover:text-gray-900 text-gray-500"><Facebook size={20} /></a>
+                            <a href="https://www.instagram.com/_forareakuten_?igsh=MXJqZHJ4MWhocTNleA==" className="hover:text-gray-900 text-gray-500"><Instagram size={20} /></a>
                         </div>
                         <p className=" text-sm text-gray-500">
                             Följ oss för uppdateringar och exklusiva erbjudanden.
@@ -94,7 +94,7 @@ function Footer() {
                 </p>
                 <div className="flex space-x-4 md:space-x-6 text-white">
                     <a href="#" className="hover:text-gray-400"><Facebook size={16} /></a>
-                    <a href="#" className="hover:text-gray-400"><Instagram size={16} /></a>
+                    <a href="https://www.instagram.com/_forareakuten_?igsh=MXJqZHJ4MWhocTNleA==" className="hover:text-gray-400"><Instagram size={16} /></a>
 
                     {/* <a href="#" className="hover:text-gray-400"><Twitter size={16} /></a> */}
                     {/* <a href="#" className="hover:text-gray-400"><Youtube size={16} /></a> */}

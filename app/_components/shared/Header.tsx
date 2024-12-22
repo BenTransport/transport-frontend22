@@ -30,8 +30,8 @@ export const NavigationBar: React.FC = () => {
 
                     </div>
                     <div className="flex space-x-4 md:space-x-6">
-                        <a href="#" className="hover:text-gray-400"><Facebook size={16} /></a>
-                        <a href="#" className="hover:text-gray-400"><Instagram size={16} /></a>
+                        <a href="https://m.facebook.com/100076726356313/" className="hover:text-gray-400"><Facebook size={16} /></a>
+                        <a href="https://www.instagram.com/_forareakuten_?igsh=MXJqZHJ4MWhocTNleA==" className="hover:text-gray-400"><Instagram size={16} /></a>
 
                         {/* <a href="#" className="hover:text-gray-400"><Twitter size={16} /></a> */}
                         {/* <a href="#" className="hover:text-gray-400"><Youtube size={16} /></a> */}
